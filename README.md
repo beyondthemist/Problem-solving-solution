@@ -12,14 +12,14 @@ https://www.acmicpc.net/
       
 ## 2. 각 문제의 출처는 solution 파일 내에 주석으로 명시되어 있음
 #### Example
-'''
-# https://programmers.co.kr/learn/courses/30/lessons/81301
-def solution(s):
-    words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+'''  
+#https://programmers.co.kr/learn/courses/30/lessons/81301  
+def solution(s):  
+    words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']  
     
-    for word in words:
-        s = s.replace(word, str(words.index(word)))
+    for word in words:  
+        s = s.replace(word, str(words.index(word)))  
 
-    answer = int(s)
-    return answer
+    answer = int(s)  
+    return answer  
 '''
