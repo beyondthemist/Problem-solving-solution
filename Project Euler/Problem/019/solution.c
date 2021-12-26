@@ -8,7 +8,7 @@ int main()
     int day = 1; 
     int year, month;
     int count = 0;
-    int isLeap;
+    int is_leap;
  
     int arr[2][12] = { 
         { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 },
@@ -23,18 +23,18 @@ int main()
  
     for (year = 1901; year <= 2000; ++year) 
     {
-        isLeap = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+        is_leap = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
  
         for (month = 1; month <= 12; ++month)
         {
             count += (day == 1);
  
-            while (day <= arr[isLeap][month - 1])
+            while (day <= arr[is_leap][month - 1])
             {
                 day += 7;
             }
  
-            day -= arr[isLeap][month - 1];
+            day -= arr[is_leap][month - 1];
         }
     }
  
