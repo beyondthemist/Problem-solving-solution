@@ -1,7 +1,7 @@
 // https://euler.synap.co.kr/problem=4
 // https://projecteuler.net/problem=4
 
-public class Problem004 {
+public class Solution {
     public static void main(String args[]) {
       System.out.println(run()); 
     }
