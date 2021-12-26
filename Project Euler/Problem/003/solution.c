@@ -1,3 +1,6 @@
+// https://euler.synap.co.kr/problem=3
+// https://projecteuler.net/problem=3
+
 #include <stdio.h>
  
 int run();
