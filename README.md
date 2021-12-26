@@ -12,4 +12,4 @@ https://www.acmicpc.net/
 는 solution 파일 내에 주석으로 명시되어 있음.
 
 ## 3. 한 언어로만 풀지는 않았음
-양으로 따지면 Java > Python > C
+양으로 따지면 Java >= Python > C
