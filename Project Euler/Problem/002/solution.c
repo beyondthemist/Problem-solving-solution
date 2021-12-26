@@ -1,3 +1,6 @@
+// https://euler.synap.co.kr/problem=2
+// https://projecteuler.net/problem=2
+
 #include <stdio.h>
  
 #define LIMIT 4000000
