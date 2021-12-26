@@ -1,6 +1,6 @@
 // https://euler.synap.co.kr/quiz=1
 
-public class Main {
+public class Solution {
     public static void main(String args[]) {
       System.out.println(run());
     }
