@@ -1,7 +1,7 @@
 // https://euler.synap.co.kr/problem=1
 // https://projecteuler.net/problem=1
 
-public class Problem001 {
+public class Solution {
  
     public static void main(String[] args) {
         int sum = 0 ;
