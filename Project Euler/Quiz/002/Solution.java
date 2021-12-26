@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.util.List;
 import java.util.ArrayList;
  
-public class Q002 {
+public class Solution {
     public static void main(String args[]) {
       System.out.println(run());
     }
