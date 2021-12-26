@@ -11,6 +11,7 @@ int main()
     printf("Sum of squares: %d\n", ((MAX*(MAX + 1)*(2 * MAX + 1)) / 6));
     printf("Answer: %d\n", ((((MAX)*(MAX + 1)) / 2)*(((MAX)*(MAX + 1)) / 2)) - ((MAX*(MAX + 1)*(2 * MAX + 1)) / 6));
   
+    /* another solution */
     /*
     int i;
     int answer = 0;
