@@ -1,7 +1,7 @@
 // https://euler.synap.co.kr/problem=2
 // https://projecteuler.net/problem=2
-public class Problem002 {
- 
+
+public class Solution {
     public static void main(String[] args) {
         int n1 = 1, n2 = 2;
         int n3 = n1 + n2;
@@ -19,7 +19,6 @@ public class Problem002 {
         }
         
         System.out.println("Sum:" + sum);
-        
     }
  
 }
