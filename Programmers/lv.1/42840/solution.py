@@ -7,16 +7,13 @@ def solution(answers):
     corrects = {1: 0, 2: 0, 3: 0}
     
     for i in range(len(answers)):
-        if answers[i] == d[1][i%len(d[1])]:
-            corrects[1] += 1
-        if answers[i] == d[2][i%(len(d[2]))]:
-            corrects[2] += 1
-        if answers[i] == d[3][i%(len(d[3]))]:
-            corrects[3] += 1
+        for key in d.keys():
+            if answers[i] == d[key][i%len(d[key])]:
+                corrects[key] += 1
     
     m = max(corrects.items(), key=lambda x: x[1])[1]
     answer = []
-    for i in list(corrects.keys()):
+    for i in corrects.keys():
         if m == corrects[i]:
             answer.append(i)
         
