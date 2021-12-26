@@ -1,3 +1,6 @@
+// https://euler.synap.co.kr/problem=8
+// https://projecteuler.net/problem=8
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(run());
