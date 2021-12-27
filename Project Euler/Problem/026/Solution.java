@@ -1,3 +1,6 @@
+// https://euler.synap.co.kr/problem=26
+// https://projecteuler.net/problem=26
+
 import java.util.List;
 import java.util.ArrayList;
  
