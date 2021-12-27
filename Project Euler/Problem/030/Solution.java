@@ -24,14 +24,14 @@ public class Solution {
 		int sum = 0;
 		
 		while(n != 0) {
-			sum += exp(n % 10);
+			sum += exp5(n % 10);
 			n /= 10;
 		}
 		
 		return sum;
 	}
 	
-	public static int exp(int n) {
+	public static int exp5(int n) {
 		return (n*n*n*n*n);
 	}
 }
