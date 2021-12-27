@@ -4,7 +4,6 @@
 import java.math.BigInteger;
  
 public class Solution2 {
-    
     public static void main(String[] args) {
         System.out.println(run());
     }
