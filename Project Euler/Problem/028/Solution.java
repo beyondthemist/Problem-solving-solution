@@ -6,11 +6,11 @@ public class Solution {
 	private static final int LIM = (LEN / 2) + 1;
 	
 	public static void main(String[] args) {
-		System.out.println(new Problem028().run());
+		System.out.println(run());
 
 	}
 	
-	public String run() {
+	public static String run() {
 		int[] add = {8, 6, 4, 2};
 		int[] mem = {1, 1, 1, 1};
 		long count = -3;
