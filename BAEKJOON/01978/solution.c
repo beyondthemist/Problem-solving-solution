@@ -1,3 +1,5 @@
+//https://www.acmicpc.net/problem/1978
+
 #include <stdio.h>
  
 int is_prime(int n);
