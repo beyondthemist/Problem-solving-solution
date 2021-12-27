@@ -1,3 +1,6 @@
+# https://euler.synap.co.kr/problem=25
+# https://projecteuler.net/problem=25
+
 n1, n2 = 1; n3 = 0
 count = 2
 
