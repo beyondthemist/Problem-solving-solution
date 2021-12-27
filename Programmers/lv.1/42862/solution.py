@@ -4,6 +4,10 @@ def solution(n, lost, reserve):
     reserves = sorted(list(set(reserve) - set(lost)))
     losts = sorted(list(set(lost) - set(reserve)))
     
+    ''' Sorting is not necessary '''
+    # reserves = list(set(reserve) - set(lost))
+    # losts = list(set(lost) - set(reserve))
+    
     i = 0
     while i in range(len(losts)):
         lost_student = losts[i]
