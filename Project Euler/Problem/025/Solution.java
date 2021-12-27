@@ -24,20 +24,18 @@ public class Solution {
 		n2[lim] = 1;
 		
 		while(n3[1] < 0) {
-			
 			for(int i = lim; ((n1[i] >= 0) || (n2[i] >= 0)) && (i > 0); i--) {
 				if(n1[i] < 0) {
 					n1[i] = 0;
 					n3[i] = n1[i] + n2[i];
-				}else if(n2[i] < 0){
+				} else if(n2[i] < 0){
 					n2[i] = 0;
 					n3[i] = n1[i] + n2[i];
 				}
 				
 				n3[i] = n1[i] + n2[i];
 			}
-		
-			
+
 			for(int i = lim; (n3[i] >= 0) && (i > 0); i--) {
 				if(n3[i] >= 10) {
 					if(n3[i - 1] < 0) {
@@ -60,5 +58,4 @@ public class Solution {
 		
 		return Integer.toString(count);
 	}
-	
 }
