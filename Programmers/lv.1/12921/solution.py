@@ -8,5 +8,6 @@ def solution(n):
             for j in range(2*i, len(is_prime), i):
                 is_prime[j] = False
         i += 2
-    answer = len([i for i in range(len(is_prime)) if is_prime[i]])
+    answer = is_prime.count(True)
+    
     return answer
