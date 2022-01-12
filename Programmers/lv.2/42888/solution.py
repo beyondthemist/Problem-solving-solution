@@ -6,7 +6,7 @@ def solution(record):
     users = {} #uid, name
     for r in record: # Update changed names
         data = r.split(' ')
-
+        
         if data[0] == 'Change':
             changed[data[1]] = data[2]
         elif data[0] == 'Leave':
@@ -17,12 +17,12 @@ def solution(record):
                 changed[data[1]] = data[2]
 
     answer = []
-    for i in range(len(record)):
-        data = record[i].split(' ')
+    for r in record:
+        data = r.split(' ')
         
         if data[0] == 'Enter':
             answer.append(changed.get(data[1], data[2]) + "님이 들어왔습니다.")
         elif data[0] == 'Leave':
             answer.append(changed.get(data[1], users.get(data[1])) + "님이 나갔습니다.")
-
+            
     return answer
