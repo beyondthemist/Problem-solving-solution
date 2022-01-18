@@ -1,6 +1,5 @@
 # https://programmers.co.kr/learn/courses/30/lessons/17677 
 
-# J(A, B) = n(A and B) / n(A or B)
 def j(a, b):
     i = u = 0
     for e in (set(a)).union(set(b)):
@@ -18,7 +17,4 @@ def get_set(s): #Multiple set
     return l
 
 def solution(str1, str2):
-    l1 = get_set(str1.lower())
-    l2 = get_set(str2.lower())
-    
-    return int(j(l1, l2) * 65536)
+    return int(j(get_set(str1.lower()), get_set(str2.lower())) * 65536)
