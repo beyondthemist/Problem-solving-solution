@@ -11,9 +11,10 @@ def j(a, b):
 def get_set(s): #Multiple set
     l = []
     for i in range(len(s) - 1):
-        if (('a' <= s[i] and s[i] <= 'z')
-            and ('a' <= s[i + 1] and s[i + 1] <= 'z')):
-            l.append(s[i:i+2])
+        #if (('a' <= s[i] and s[i] <= 'z')
+        #    and ('a' <= s[i + 1] and s[i + 1] <= 'z')):
+        if s[i].isalpha() and s[i + 1].isalpha():
+            l.append(s[i:i+2])    
     return l
 
 def solution(str1, str2):
