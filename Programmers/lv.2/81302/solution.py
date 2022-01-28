@@ -28,9 +28,9 @@ def solution(places):
                 legal = False
             elif d == 2:
                 if c1[0] == c2[0]:
-                    legal = place[c1[0]][max(c1[1], c2[1]) - 1] == 'X'
+                    legal = place[c1[0]][(c1[1] + c2[1]) // 2] == 'X'
                 elif c1[1] == c2[1]:
-                    legal = place[max(c1[0], c2[0]) - 1][c1[1]] == 'X'
+                    legal = place[(c1[0] + c2[0]) // 2][c1[1]] == 'X'
                 else:
                     legal = place[c1[0]][c2[1]] == 'X' and place[c2[0]][c1[1]] == 'X'
                     
