@@ -7,7 +7,6 @@ def solution(cacheSize, cities):
     
     cities = [city.upper() for city in cities]
     cache = []
-    oldest = 0
     time = 0
     for city in cities:
         if city in cache:
