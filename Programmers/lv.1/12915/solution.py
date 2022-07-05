@@ -11,6 +11,6 @@ def solution(strings, n):
     for k in d.keys(): #sort words
         d[k].sort()
     
-    answer = [ word for words in sorted(d.items(), key = lambda x: x[0]) for word in words[1]]
+    answer = [word for words in sorted(d.items(), key = lambda x: x[0]) for word in words[1]]
     
     return answer
