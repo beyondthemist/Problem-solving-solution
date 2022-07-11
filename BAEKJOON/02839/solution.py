@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/24416
+
 n = int(input())
 
 count = 0
