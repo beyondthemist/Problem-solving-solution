@@ -10,7 +10,7 @@ while sum(n) < x:
     n += 1
 
 diff = x - sum(n - 1) - 1
-if n % 2 == 0: # ↙
-    print(f'{1 + diff}/{n - (diff)}')
+if n%2 == 0: # ↙
+    print(f'{1 + diff}/{n - diff}')
 else: # ↗
-    print(f'{n - (diff)}/{1 + diff}')
+    print(f'{n - diff}/{1 + diff}')
