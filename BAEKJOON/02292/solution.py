@@ -2,7 +2,7 @@
 
 def solution(n):
     if n == 1:
-        return -1
+        return 1
 
     count = 2 #first and last
     tmp = n - 2
