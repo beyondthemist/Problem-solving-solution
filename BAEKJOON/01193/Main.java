@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class Main {
  
     public static void main(String[] args) {
-        System.out.print(new Main().run());
+        System.out.print(run1());
+        System.out.print(run2());
     }
  
-    public String run() {
+    public String run1() {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
         int count = 0;
@@ -48,5 +49,23 @@ public class Main {
         result = Integer.toString(numer) + "/" + Integer.toString(denom);
         
         return result;
+    }
+ 
+ 
+  	public static String run2() {
+       Scanner sc = new Scanner(System.in);
+       int x = sc.nextInt();
+       int n = 0;
+        
+       while(sum(++n) < x);
+        
+       int diff = x - sum(n - 1) - 1;
+       return (n%2 == 0) ? ((1 + diff) + "/" + (n - diff))
+                         : ((n - diff) + "/" + (1 + diff));
+    }
+	
+    
+    public static int sum(int n) {
+        return (n*(n + 1))/2;
     }
 }
