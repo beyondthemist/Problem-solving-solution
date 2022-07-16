@@ -11,6 +11,7 @@ def solution(n):
         count += 1
         i += a
         a += 1
+
     return count
 
 n = int(input())
