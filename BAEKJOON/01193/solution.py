@@ -14,3 +14,4 @@ if n%2 == 0: # ↙
     print(f'{1 + diff}/{n - diff}')
 else: # ↗
     print(f'{n - diff}/{1 + diff}')
+# print(f'{1 + diff}/{n - diff}' if n%2 == 0 else f'{n - diff}/{1 + diff}')
