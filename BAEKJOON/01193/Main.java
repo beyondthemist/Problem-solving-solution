@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
  
     public static void main(String[] args) {
-        System.out.print(run1());
+        //System.out.print(run1());
         System.out.print(run2());
     }
  
@@ -52,16 +52,16 @@ public class Main {
     }
  
  
-  	public static String run2() {
-       Scanner sc = new Scanner(System.in);
-       int x = sc.nextInt();
-       int n = 0;
+    public static String run2() {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int n = 0;
         
-       while(sum(++n) < x);
+        while(sum(++n) < x);
         
-       int diff = x - sum(n - 1) - 1;
-       return (n%2 == 0) ? ((1 + diff) + "/" + (n - diff))
-                         : ((n - diff) + "/" + (1 + diff));
+        int diff = x - sum(n - 1) - 1;
+        return (n%2 == 0) ? ((1 + diff) + "/" + (n - diff))
+                          : ((n - diff) + "/" + (1 + diff));
     }
 	
     
