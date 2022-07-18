@@ -1,5 +1,5 @@
 def is_prime(x):
-    if x == 1:
+    if x <= 1:
         return False
     elif x == 2:
         return True
@@ -10,12 +10,15 @@ def is_prime(x):
     return True
 
 m, n = int(input()), int(input())
-minimum, count = n, 0a
-for x in range(m, n):
+minimum, count = n, 0
+for x in range(m, n + 1):
     if is_prime(x):
         count += x
         if minimum > x:
             minimum = x
 
-print(-1 if count == 0 else count)
-print(minimum)
+if count == 0: 
+    print(-1)
+else:
+    print(count)
+    print(minimum)
