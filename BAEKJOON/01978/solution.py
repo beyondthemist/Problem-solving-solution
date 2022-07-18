@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1978
+
 def is_prime(x):
     if x == 1:
         return 0
