@@ -18,7 +18,6 @@ while not (a == -1 and b == -1 and c == -1):
         print(f'w({a}, {b}, {c}) = {d[0][0][0]}')
     elif a > 20 or b > 20 or c > 20:
         print(f'w({a}, {b}, {c}) = {d[20][20][20]}')
-        a = b = c = 20
     else:
         print(f'w({a}, {b}, {c}) = {d[a][b][c]}')
     a, b, c = [int(x) for x in input().split()]
