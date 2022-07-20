@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/13305
+
 n = int(input())
 d = [int(x) for x in input().split()]
 price = [int(x) for x in input().split()]
