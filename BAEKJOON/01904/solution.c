@@ -1,5 +1,4 @@
 // https://www.acmicpc.net/problem/1904
-// I coudn't solve this problem by using Python because of time limit of 750ms.
 #include <stdio.h>
 
 int main()
