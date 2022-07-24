@@ -1,4 +1,4 @@
-# https://www.acmicpc.net/problem/1003
+# https://www.acmicpc.net/problem/1004
 
 for i in range(int(input())):
     x1, y1, x2, y2 = [int(x) for x in input().split()]
