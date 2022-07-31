@@ -5,6 +5,7 @@ for _ in range(int(input())):
     l = [0]*26
     prev = None
     is_grouped = True
+    
     for c in input():
         offset = ord(c) - ord('a')
         if prev != c:
