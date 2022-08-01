@@ -2,9 +2,11 @@
 
 n = int(input())
 a = [[int(x) for x in input().split()] for _ in range(n)]
-'''a = []
+'''
+a = []
 for _ in range(n):
-    a.append([int(x) for x in input().split()])'''
+    a.append([int(x) for x in input().split()])
+'''
 
 for i in range(n):
     count = 0
