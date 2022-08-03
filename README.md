@@ -22,4 +22,4 @@ https://<hi1>euler.synap.co.kr/problem=XXX
 https://<hi1>projecteuler.net/problem=XXX  
 <br/>
 #### BAEKJOON  
-https://<hi1>www.acmicpc.net/problem/XXX
+https://<hi1>www<hi1>.acmicpc.net/problem/XXX
