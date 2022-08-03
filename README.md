@@ -8,8 +8,14 @@ https://euler.synap.co.kr/        (번역 사이트, 사이냅소프트 社에�
 #### BAEKJOON
 https://www.acmicpc.net/
   
-## 2. 각 문제의 출처
-는 solution 파일 내에 주석으로 명시되어 있음.
   
-## 3. 한 언어로만 풀지는 않았음
-양으로 따지면 Java >= Python > C
+## 2. 각 문제의 출처 (XXX: 문제 번호)  
+##### Programmers
+https://programmers.co.kr/learn/courses/30/lessons/XXX
+
+##### Project Euler  
+https://euler.synap.co.kr/problem=XXX 
+https://projecteuler.net/problem=XXX
+  
+##### BAEKJOON  
+https://www.acmicpc.net/problem/XXX
