@@ -2,7 +2,7 @@
 
 x, y = 1, 1
 for _ in range(int(input()) - 1):
-    x, y = y%15746, x
+    x, y = y, x
     y = (x + y)%15746
 
 print(y)
