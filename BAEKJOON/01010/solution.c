@@ -5,16 +5,14 @@
 int main()
 {
     int t, m, n;
-    int lim, i, result;
+    int i, result;
  
     scanf("%d", &t);
     while (t--)
     {
         scanf("%d %d", &n, &m);
-        lim = ((n > m / 2) ? (m - n) : n);
         result = 1;
- 
-        for (i = 0; i < lim; i++)
+        for (i = 0; i < ((n > m / 2) ? (m - n) : n); i++)
         {
             result /= (i + 1);
             result *= (m - i);
