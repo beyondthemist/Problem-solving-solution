@@ -8,3 +8,17 @@ def solution(s):
 
     answer = int(s)
     return answer
+
+'''
+def solution(s: str) -> int:
+    words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+    d = {}
+    for i in range(10):
+        d[words[i]] = str(i)
+
+    for word in words:
+        s = s.replace(word, d[word])
+
+    answer = int(s)
+    return answer
+'''
