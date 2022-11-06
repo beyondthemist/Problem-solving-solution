@@ -14,8 +14,7 @@ def solution(fees, records):
         if flag == "IN":
             parked[car] = int(time[:2])*60 + int(time[3:])
         else:
-            parked_time = int(time[:2])*60 + int(time[3:]) - parked[car]
-            del parked[car]
+            parked_time = int(time[:2])*60 + int(time[3:]) - parked.pop(car)
             total_time[car] = total_time.get(car, 0) + parked_time
             
     for car in parked:
