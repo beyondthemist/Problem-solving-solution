@@ -11,7 +11,7 @@ def solution(fees, records):
         data = record.split()
         time, car, flag = data[0], data[1], data[2]
         
-        if flag == "IN":
+        if flag == 'IN':
             parked[car] = int(time[:2])*60 + int(time[3:])
         else:
             parked_time = int(time[:2])*60 + int(time[3:]) - parked.pop(car)
