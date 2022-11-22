@@ -6,7 +6,7 @@ def solution(q1,  q2):
     s1, s2 = sum(q1), sum(q2)
     q1, q2 = deque(q1), deque(q2)
     lim = (len(q1)) << 2
-    while s1 != s2 and cnt < lim :
+    while s1 != s2 and cnt < lim:
         if s1 > s2:
             v = q1.popleft()
             q2.append(v)
