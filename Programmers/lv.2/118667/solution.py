@@ -1,11 +1,10 @@
 from collections import deque
 
-def solution(q1,  q2):
-    answer = -2
+def solution(q1, q2):
     cnt = 0
-    s1, s2 = sum(q1), sum(q2)
-    q1, q2 = deque(q1), deque(q2)
+    q1, q2 = deque(q1), deque(q2) # for using popleft()
     lim = (len(q1)) << 2
+    s1, s2 = sum(q1), sum(q2)
     while s1 != s2 and cnt < lim:
         if s1 > s2:
             v = q1.popleft()
