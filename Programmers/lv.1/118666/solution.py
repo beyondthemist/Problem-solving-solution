@@ -14,6 +14,7 @@ def solution(surveys, choices):
                 choices[i] = 8 - choices[i]
         elif choices[i] < 4:
             choices[i] = 4 - choices[i]
+
     for survey, choice in zip(surveys, choices):
         scores[survey][survey[choice//4]] += (choice%4)
 
@@ -22,4 +23,5 @@ def solution(surveys, choices):
         a = scores[index][index[0]] # R, C, J, A
         b = scores[index][index[1]] # T, F, M, N
         answer.append(score[int(a < b)])
+
     return ''.join(answer)
