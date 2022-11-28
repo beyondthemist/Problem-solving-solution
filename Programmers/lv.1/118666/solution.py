@@ -22,6 +22,6 @@ def solution(surveys, choices):
     for index in scores:
         a = scores[index][index[0]] # R, C, J, A
         b = scores[index][index[1]] # T, F, M, N
-        answer.append(score[int(a < b)])
+        answer.append(index[int(a < b)])
 
     return ''.join(answer)
