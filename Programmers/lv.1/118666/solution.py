@@ -18,9 +18,9 @@ def solution(surveys, choices):
         scores[survey][survey[choice//4]] += (choice%4)
 
     answer = []
-    for score in scores:
-        a = scores[score][score[0]] # R, C, M, A
-        b = scores[score][score[1]] # T, F, J, N
+    for key in scores:
+        a = scores[key][key[0]] # R, C, M, A
+        b = scores[key][key[1]] # T, F, J, N
         if score != 'MJ':
             answer.append(score[0] if a >= b else score[1])
         else:
