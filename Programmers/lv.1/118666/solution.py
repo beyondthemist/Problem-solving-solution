@@ -1,7 +1,7 @@
 def solution(surveys, choices):
     scores = {'RT': {'R': 0, 'T': 0},
     'CF': {'C': 0, 'F': 0},
-    'MJ': {'M': 0, 'J': 0},
+    'JM': {'J': 0, 'M': 0},
     'AN': {'A': 0, 'N': 0}}
 
     keys = set(scores.keys())
@@ -18,12 +18,8 @@ def solution(surveys, choices):
         scores[survey][survey[choice//4]] += (choice%4)
 
     answer = []
-    for key in scores:
-        a = scores[key][key[0]] # R, C, M, A
-        b = scores[key][key[1]] # T, F, J, N
-        if score != 'MJ':
-            answer.append(score[0] if a >= b else score[1])
-        else:
-            answer.append(score[1] if a <= b else score[0])
-
+    for index in scores:
+        a = scores[index][index[0]] # R, C, J, A
+        b = scores[index][index[1]] # T, F, M, N
+        answer.append(score[int(a < b)])
     return ''.join(answer)
