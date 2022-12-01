@@ -11,8 +11,8 @@ def solution(k, tangerines: List[int]):
     for tangerine in tangerines:
         d[tangerine] += 1
     d = OrderedDict(sorted(d.items(), key=lambda item: item[1], reverse=True)) 
-    
-    cnt = 0
+
+
     answer = 0
     for item in d.items():
         k -= item[1]
