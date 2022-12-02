@@ -11,6 +11,7 @@ def solution(k: int, dungeons: List[int]):
                 and i not in explored:
                 to_explore.append(i)
 
+        # base case
         # if no dungeon to explore then end the exploratory
         if not to_explore:
             return curr_stage
