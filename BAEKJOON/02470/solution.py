@@ -7,16 +7,17 @@ def solve(solutions: list[int], n: int) -> str:
     val = solutions[left] + solutions[right]
     answer = f'{solutions[left]} {solutions[right]}'
     while val != 0:
-        if solutions[left] + solutions[right] > 0:
+        new_val = solutions[left] + solutions[right]
+        if new_val > 0:
             right -= 1
-        elif solutions[left] + solutions[right] < 0:
+        elif new_val < 0:
             left += 1
         
         if left >= right:
             break
 
-        if abs(val) > abs(solutions[left] + solutions[right]):
-            val = solutions[left] + solutions[right]
+        if abs(val) > abs(new_val):
+            val = new_val
             answer = f'{solutions[left]} {solutions[right]}'
 
     return answer
