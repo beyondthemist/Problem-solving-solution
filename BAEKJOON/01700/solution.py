@@ -5,7 +5,7 @@ def get_latest_idx(appliances, appliance, idx, k):
     return n
 
 
-def solve(n, k, appliances: list[int]):
+def solve(n, k, appliances):
     if n == 1:
         cnt = 0
         for i in range(1, k):
