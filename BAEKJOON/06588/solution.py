@@ -1,3 +1,6 @@
+import sys
+input = sys.__stdin__.readline
+
 def get_goldbach_pair(n, sieve):
     for b in range(2, n//2 + 1):
         if sieve[n - b] and sieve[b]:
