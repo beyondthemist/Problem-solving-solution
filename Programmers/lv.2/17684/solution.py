@@ -12,10 +12,10 @@ def solution(msg):
 
         if x in d:
             answer.append(d.index(x) + 1)
-            i += j - i
-        else:
-            d.append(x)
-            answer.append(d.index(x[:-1]) + 1)
-            i += j - i - 1
+            break
+
+        d.append(x)
+        answer.append(d.index(x[:-1]) + 1)
+        i += j - i - 1
 
     return answer
