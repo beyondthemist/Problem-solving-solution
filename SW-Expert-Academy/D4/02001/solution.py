@@ -21,4 +21,4 @@ for case in range(1, t + 1):
             if ans < tmp:
                 ans = tmp
 
-    print(f'#{(case)} {ans}')
+    print(f'#{case} {ans}')
