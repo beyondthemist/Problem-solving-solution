@@ -1,9 +1,12 @@
+import sys
+input = sys.__stdin__.readline
+
 def dfs(g, r=1, visited=[]):
     visited.append(r)
 
     for w in g[r]:
         if w not in visited:
-            visited = dfs(g, r=w, visited=visited)
+            visited = dfs(g, w, visited=visited)
 
     return visited
 
@@ -22,4 +25,4 @@ for _ in range(m):
     else:
         g[w].append(v)
 
-print(len(dfs(g)) - 1)
+print(0 if m == 0 else len(dfs(g=g)) - 1)
