@@ -2,7 +2,6 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-
 	public static void main(String[] args)
 	throws Exception {
 		BufferedReader br = new BufferedReader(
@@ -17,7 +16,7 @@ public class Main {
 			int y = Integer.parseInt(st.nextToken());
 			int d = Integer.parseInt(st.nextToken());
 			int g = Integer.parseInt(st.nextToken());
-			
+
 			int[][] di = {
 				{1, 0},
 				{0, -1},
@@ -25,7 +24,7 @@ public class Main {
 				{0, 1}
 			};
 			grid[x][y] = true;
-	
+
 			x += di[d][0];
 			y += di[d][1];
 			grid[x][y] = true;
