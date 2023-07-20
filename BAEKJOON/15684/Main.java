@@ -35,7 +35,7 @@ public class Main {
 			for(int gen = 1; gen <= g; ++gen) {
 				List<Integer> toMove = new ArrayList<>();
 				for(int i = moved.size() - 1; i >= 0; --i) {
-					toMove.add((moved.get(i) + 1)%4;
+					toMove.add((moved.get(i) + 1)%4);
 				}
 
 				for(int i = 0; i < toMove.size(); i++) {
